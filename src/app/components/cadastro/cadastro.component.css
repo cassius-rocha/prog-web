@@ -1,0 +1,76 @@
+/* Contêiner do formulário */
+form {
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    display: block; /* Usando block para o formulário */
+  }
+  
+  /* Alinha as divs e seus respectivos campos de input */
+  div {
+    margin-bottom: 15px; /* Espaçamento entre as divs */
+    clear: both; /* Faz com que cada div comece em uma nova linha */
+  }
+  
+  /* Rótulos (títulos) das divs */
+  div label {
+    display: inline-block;  /* Deixa o rótulo como inline-block, para que o campo de input apareça ao lado */
+    margin-right: 10px; /* Espaço entre o rótulo e o campo de input */
+  }
+  
+  /* Estilo para os inputs */
+  input {
+    display: inline-block; /* Deixa o input como inline-block para ficar ao lado do rótulo */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para os campos "Código", "Nome", "Email", "Telefone", "Documento" */
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 600px;  /* Faz o input ocupar 10 vezes o tamanho do rótulo */
+  }
+  
+  /* Estilo para os campos "Senha" e "Confirmação de senha" */
+  input[type="password"] {
+    width: 250px;  /* Faz esses inputs ocuparem 1/3 do tamanho dos outros */
+  }
+  
+  /* Estilo para o campo "Endereço" */
+  input#endereco {
+    width: 600px;  /* Mesmo tamanho que os outros campos de texto */
+    height: 60px;  /* Aumenta a altura do campo de endereço */
+    resize: vertical;  /* Permite o redimensionamento apenas vertical */
+  }
+  
+  /* Alinha o checkbox à esquerda */
+  .checkbox-container {
+    display: block;  /* Deixa o checkbox em uma linha separada */
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-container input {
+    display: inline-block;  /* Alinha o checkbox à esquerda */
+  }
+  
+  /* Botão "Gravar" posicionado no canto inferior direito */
+  .button-container {
+    text-align: right;  /* Alinha o botão à direita */
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 5px 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
